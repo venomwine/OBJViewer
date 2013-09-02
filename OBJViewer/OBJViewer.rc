@@ -1,0 +1,231 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\OBJViewer.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\OBJViewer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OBJVIEWER_DIALOG DIALOGEX 0, 0, 423, 333
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "OBJViewer"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "취소",IDCANCEL,309,314,50,14,NOT WS_VISIBLE
+    LTEXT           "Display",IDC_DISPLAY,7,7,300,300,NOT WS_VISIBLE
+    PUSHBUTTON      "Open",IDC_FILEOPEN_BUTTON,6,313,52,14
+    LTEXT           "File Name",IDC_LBLFILENAME,61,315,301,10,SS_CENTERIMAGE
+    PUSHBUTTON      "Clear Color",IDC_BGCOLOR_BUTTON,312,7,38,14
+    PUSHBUTTON      "Obj Color",IDC_OBJCOLOR_BUTTON,352,7,38,14
+    DEFPUSHBUTTON   "Exit",IDOK,365,313,52,14
+    GROUPBOX        "Mouse Control Mode",IDC_STATIC,313,24,103,26
+    CONTROL         "Object",IDC_RADIO_OBJ,"Button",BS_AUTORADIOBUTTON | WS_GROUP,370,34,37,10
+    CONTROL         "View",IDC_RADIO_VIEW,"Button",BS_AUTORADIOBUTTON,322,34,31,10
+    PUSHBUTTON      "Reset",IDC_RESET_BUTTON,392,7,25,14
+    CONTROL         "Vertex",IDC_CHECK_VERTEX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,322,142,37,10
+    CONTROL         "Texture",IDC_CHECK_TEXTURE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,370,142,41,10
+    GROUPBOX        "Options",IDC_STATIC,313,53,103,254
+    LTEXT           "◈ glFrontFace",IDC_STATIC,317,94,56,8
+    CONTROL         "CCW",IDC_RADIO_CCW,"Button",BS_AUTORADIOBUTTON | WS_GROUP,322,107,31,10
+    CONTROL         "CW",IDC_RADIO_CW,"Button",BS_AUTORADIOBUTTON,370,107,27,10
+    LTEXT           "◈ Elements",IDC_STATIC,317,129,56,8
+    LTEXT           "◈ glEnable",IDC_STATIC,317,199,56,8
+    LTEXT           "◈ glShadeModel",IDC_STATIC,317,260,56,8
+    CONTROL         "SMOOTH",IDC_RADIO_SMOOTH,"Button",BS_AUTORADIOBUTTON | WS_GROUP,322,273,45,10
+    CONTROL         "FLAT",IDC_RADIO_FLAT,"Button",BS_AUTORADIOBUTTON,370,273,32,10
+    CONTROL         "GL_DEPTH_TEST",IDC_CHECK_DEPTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,322,212,71,10
+    CONTROL         "GL_BLEND",IDC_CHECK_BLEND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,322,225,49,10
+    CONTROL         "GL_CULL_FACE",IDC_CHECK_CULLFACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,322,238,63,10
+    LTEXT           "◈ Texture Color",IDC_STATIC,317,164,56,8
+    CONTROL         "RGB",IDC_RADIO_RGB,"Button",BS_AUTORADIOBUTTON | WS_GROUP,322,177,29,10
+    CONTROL         "BGR",IDC_RADIO_BGR,"Button",BS_AUTORADIOBUTTON,370,177,29,10
+    LTEXT           "◈ MIPMAP",IDC_STATIC,317,295,34,8
+    CONTROL         "",IDC_CHECK_MIPMAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,356,295,16,10
+    LTEXT           "◈ Drawing Mode",IDC_STATIC,317,63,84,8
+    COMBOBOX        IDC_COMBO_SHAPE,325,73,79,123,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "Comments", "OBJ 파일 확인 프로그램"
+            VALUE "FileDescription", "OBJ File Viewer"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "OBJViewer.exe"
+            VALUE "OriginalFilename", "OBJViewer.exe"
+            VALUE "ProductName", "OBJ Viewer"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_OBJVIEWER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 416
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 326
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_OBJVIEWER_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_SHAPE, 0x403, 9, 0
+0x4c47, 0x4c5f, 0x4e49, 0x5345, "\000" 
+    IDC_COMBO_SHAPE, 0x403, 13, 0
+0x4c47, 0x4c5f, 0x4e49, 0x5f45, 0x4f4c, 0x504f, "\000" 
+    IDC_COMBO_SHAPE, 0x403, 14, 0
+0x4c47, 0x4c5f, 0x4e49, 0x5f45, 0x5453, 0x4952, 0x0050, 
+    IDC_COMBO_SHAPE, 0x403, 13, 0
+0x4c47, 0x545f, 0x4952, 0x4e41, 0x4c47, 0x5345, "\000" 
+    IDC_COMBO_SHAPE, 0x403, 18, 0
+0x4c47, 0x545f, 0x4952, 0x4e41, 0x4c47, 0x5f45, 0x5453, 0x4952, 0x0050, 
+
+    IDC_COMBO_SHAPE, 0x403, 16, 0
+0x4c47, 0x545f, 0x4952, 0x4e41, 0x4c47, 0x5f45, 0x4146, 0x004e, 
+    IDC_COMBO_SHAPE, 0x403, 9, 0
+0x4c47, 0x515f, 0x4155, 0x5344, "\000" 
+    IDC_COMBO_SHAPE, 0x403, 14, 0
+0x4c47, 0x515f, 0x4155, 0x5f44, 0x5453, 0x4952, 0x0050, 
+    IDC_COMBO_SHAPE, 0x403, 11, 0
+0x4c47, 0x505f, 0x4c4f, 0x4759, 0x4e4f, "\000" 
+    0
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\OBJViewer.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
