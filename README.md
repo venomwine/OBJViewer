@@ -4,7 +4,7 @@ wavefront .OBJ file Viewer
 
 ## Author
 
-- Wooram, Hong-
+- Wooram, Hong
 - https://github.com/venomwine/OBJViewer
 - venomwine@gmail.com 
  
